@@ -16,7 +16,7 @@ body {
 }
 
 .card {
-    height: 650px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     width: 450px;
@@ -98,6 +98,7 @@ body {
 }
 
 .plan-info__change {
+    color: hsl(245, 75%, 52%);
     width: 100%;
     text-align: right;
     font-weight: 700;
@@ -107,6 +108,10 @@ body {
 .plan-info__change:active {
     text-decoration: none;
     opacity: 0.8;
+}
+
+.plan-info__change:visited {
+    color: hsl(245, 75%, 52%);
 }
 
 .button-wrapper {
