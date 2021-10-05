@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url('images/pattern-background-desktop.svg') no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+}
+
+.card {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px -px rgba(56, 41, 224, 0.438);
+}
+
+.card-header {
+    width: 100%;
+    height: 30%;
+    background: url('images/illustration-hero.svg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    background: #fff;
+    padding: 30px 40px;
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.content-header {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header__title {
+    font-weight: 900;
+    font-size: 28px;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 15px;
+}
+
+.content-header__description {
+    color: hsl(224, 23%, 55%);
+    line-height: 1.6em;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.plan-info {
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    padding: 25px 20px;
+    width: 100%;
+}
+
+.plan-info__item {
+    margin: 0 5px;
+}
+
+.plan-info__icon {
+    display: flex;
+}
+
+.plan-info__description {
+    width: 100%;
+}
+
+.plan-info__title {
+    font-size: 1.05em;
+    font-weight: 900;
+    margin-bottom: 5px;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan-info__price {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.plan-info__change {
+    width: 100%;
+    text-align: right;
+    font-weight: 700;
+}
+
+.plan-info__change:hover,
+.plan-info__change:active {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    border: none;
+    border-radius: 15px;
+    font-size: 0.9em;
+    padding: 16px 0;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.button-one {
+    background: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 0 5px 20px 8px rgba(56, 41, 224, 0.3);
+}
+
+.button-one:active,
+.button-one:hover {
+    opacity: 0.8;
+}
+
+.button-two {
+    background: transparent;
+    color: hsl(224, 23%, 55%);
+}
+
+.button-two:hover,
+.button-two:active {
+    color: hsl(223, 47%, 23%);
+}
+
+@media (max-width:480px) {
+
+    .card {
+        width: 90%;
+    }
+
+    .content-header {
+        margin-top: 5px;
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+
+
+    .plan-info {
+        padding: 20px 10px;
+    }
+
+    .plan-info__description {
+        font-size: 0.95em;
+    }
+
+    .plan-info__change {
+        font-size: 0.95em;
+    }
+
+}
