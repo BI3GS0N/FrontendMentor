@@ -22,7 +22,7 @@ body {
     width: 450px;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 15px 30px -px rgba(56, 41, 224, 0.438);
+    box-shadow: 0 30px 30px -10px rgba(56, 41, 224, 0.2);
 }
 
 .card-header {
@@ -131,7 +131,7 @@ body {
 .button-one {
     background: hsl(245, 75%, 52%);
     color: #fff;
-    box-shadow: 0 5px 20px 8px rgba(56, 41, 224, 0.3);
+    box-shadow: 0 10px 20px 0 rgba(56, 41, 224, 0.3);
 }
 
 .button-one:active,
