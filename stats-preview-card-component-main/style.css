@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    background: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.side {
+    flex: 1 1 50%;
+}
+
+.left-side {
+    background: hsl(244, 38%, 16%);
+    padding: 77px 100px 60px 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-side>h1 {
+    margin-bottom: 25px;
+    line-height: 1.3em;
+    font-size: 2.3em;
+}
+
+.accent {
+    color: hsla(277, 64%, 61%, 0.9);
+}
+
+.left-side>p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7em;
+    margin-bottom: 4em;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    flex: 1 1 33.33%;
+}
+
+.feature h2 {
+    font-size: 1.7em;
+}
+
+.feature p {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 0.4em;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: .9em;
+}
+
+.right-side {
+    background: url('images/image-header-desktop.jpg') hsl(277, 64%, 61%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+@media (max-width:978px) {
+    .wrapper {
+        height: 850px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-side {
+        height: 90%;
+        order: 1;
+        padding: 40px 35px;
+    }
+
+    .left-side>h1 {
+        font-size: 1.9em;
+        margin-bottom: 15px;
+    }
+
+    .left-side>p {
+        margin-bottom: 2.5em;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+
+    .feature h2 {
+        font-size: 1.5em;
+    }
+
+    .right-side {
+        height: 10%;
+        background: url('images/image-header-mobile.jpg') hsl(277, 64%, 61%);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+    }
+}
