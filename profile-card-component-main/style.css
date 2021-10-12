@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-bg: hsl(185, 75%, 39%);
+    --card-bg: #fff;
+    --text-color: hsl(229, 23%, 23%);
+    --text-second-color: hsl(227, 10%, 46%);
+    --text-light-color: hsl(0, 0%, 59%);
+    --line: hsla(240, 57%, 91%, 0.548);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 35vw bottom 50vh, left 35vw top 50vh;
+    background-color: var(--primary-bg);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    width: 330px;
+    overflow: hidden;
+}
+
+.card-top {
+    background-image: url(images/bg-pattern-card.svg);
+    background-position: center;
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card-top__image {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.card-main {
+    margin: 70px auto 24px;
+    text-align: center;
+}
+
+.card__text {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.card__text--age {
+    font-weight: 400;
+    color: var(--text-second-color);
+    padding-left: 4px;
+}
+
+.card__text--city {
+    color: var(--text-second-color);
+    font-size: .8em;
+    margin-top: 8px;
+}
+
+.card-bottom {
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.card__text--light {
+    color: var(--text-light-color);
+    font-size: .55em;
+    letter-spacing: 2px;
+    margin-top: 4px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:768px) {
+    body {
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    }
+}

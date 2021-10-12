@@ -1,27 +1,30 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: hsl(0, 0%, 95%);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     max-width: 978px;
     margin: auto;
 }
 
 /* cards el. */
-img{
+img {
     margin-bottom: 2rem;
 }
-h2{
+
+h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     color: hsl(0, 0%, 95%);
@@ -29,14 +32,15 @@ h2{
     font-size: 3rem;
     margin-bottom: 2rem;
 }
-p{
+
+p {
     color: hsla(0, 0%, 100%, 0.75);
     margin-bottom: 4.5rem;
     line-height: 1.7rem;
-    max-height:135px;
+    max-height: 135px;
 }
 
-.btn{
+.btn {
     padding: 15px 35px;
     border-radius: 2rem;
     border: 2px solid hsl(0, 0%, 95%);
@@ -44,60 +48,84 @@ p{
     background-color: hsl(0, 0%, 95%);
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    transition: color 0.5s, background 0.5s ;
-    
+    transition: color 0.5s, background 0.5s;
+
 }
-.btn:hover{
+
+.btn:hover {
     cursor: pointer;
 }
-.btn-first{
+
+.btn--first {
     color: hsl(31, 77%, 52%);
 }
-.btn-first:hover{
+
+.btn--first:hover {
     color: hsl(0, 0%, 95%);
     background-color: hsl(31, 77%, 52%);
 }
-.btn-second{
+
+.btn--second {
     color: hsl(184, 100%, 22%);
 }
-.btn-second:hover{
+
+.btn--second:hover {
     color: hsl(0, 0%, 95%);
     background-color: hsl(184, 100%, 22%);
 }
-.btn-third{
+
+.btn--third {
     color: hsl(179, 100%, 13%);
 }
-.btn-third:hover{
+
+.btn--third:hover {
     color: hsl(0, 0%, 95%);
     background-color: hsl(179, 100%, 13%);
 }
+
 /* cards */
-.card{ 
-padding: 3rem;
+.card {
+    padding: 3rem;
 }
-.first-card{
-    background-color:  hsl(31, 77%, 52%);
+
+.card--first {
+    background-color: hsl(31, 77%, 52%);
     border-radius: 10px 0 0px 10px;
 }
-.second-card{
+
+.card--second {
     background-color: hsl(184, 100%, 22%);
 }
-.third-card{
+
+.card--third {
     background-color: hsl(179, 100%, 13%);
-    border-radius: 0 10px 10px 0 ;
+    border-radius: 0 10px 10px 0;
+}
+
+/* attribution */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
 
 /* media queries */
-@media (max-width: 900px){
-    .wrapper{
+@media (max-width: 900px) {
+    .wrapper {
         /* flex-direction: column; */
         flex-wrap: wrap;
         margin: 5rem 2rem;
     }
-    .first-card{
+
+    .card--first {
         border-radius: 10px 10px 0px 0px;
     }
-    .third-card{
-        border-radius: 0px 0px 10px 10px ;
+
+    .card--third {
+        border-radius: 0px 0px 10px 10px;
     }
 }
