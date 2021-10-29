@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    /* === colors === */
+    /* == primary == */
+    --red-color: hsl(0, 78%, 62%);
+    --cryan-color: hsl(180, 62%, 55%);
+    --orange-color: hsl(34, 97%, 64%);
+    --blue-color: hsl(212, 86%, 64%);
+
+    /* == neutral == */
+    --very-dark-blue-color: hsl(234, 12%, 34%);
+    --grayish-blue-color: hsl(229, 6%, 66%);
+    --very-light-gray-color: hsl(0, 0%, 98%);
+}
+
+/* === base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--very-light-gray-color);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* === header === */
+.header {
+    max-width: 540px;
+    text-align: center;
+    margin: 8rem 3rem 7rem;
+}
+
+.header__title {
+    font-size: 2.4rem;
+    font-weight: 200;
+    color: var(--very-dark-blue-color);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.header__title--black {
+    font-weight: 600;
+}
+
+.header__description {
+    color: var(--grayish-blue-color);
+}
+
+/* === cards === */
+.container {
+    max-width: 1080px;
+    display: grid;
+    gap: 3rem;
+    margin: 0 3rem 5rem;
+}
+
+.card {
+    padding: 2rem 3rem 3rem;
+    background-color: #fff;
+    border-top: 4px solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px -5px var(--grayish-blue-color);
+}
+
+.card__title {
+    color: var(--very-dark-blue-color);
+    font-size: 2rem;
+    margin-bottom: .4rem;
+}
+
+.card__description {
+    margin-bottom: 3.5rem;
+    color: var(--grayish-blue-color);
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+.card__img {
+    display: flex;
+    margin-left: auto;
+    width: 58px;
+}
+
+.card:nth-of-type(1) {
+    border-top-color: var(--cryan-color);
+    grid-area: 'cyan';
+}
+
+.card:nth-of-type(2) {
+    border-top-color: var(--red-color);
+    grid-area: 'red';
+}
+
+.card:nth-of-type(3) {
+    border-top-color: var(--orange-color);
+    grid-area: 'orange';
+}
+
+.card:nth-of-type(4) {
+    border-top-color: var(--blue-color);
+    grid-area: 'blue';
+}
+
+/* === attribution === */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

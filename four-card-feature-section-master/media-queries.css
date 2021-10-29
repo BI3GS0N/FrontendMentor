@@ -1,0 +1,49 @@
+@media screen and (min-width:496px) {
+    .header__title {
+        font-size: 3.2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:992px) {
+    .header__title {
+        font-size: 3.5rem;
+    }
+
+    .container {
+        /* max-width: 95%; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            '. red .'
+            'cyan red blue'
+            'cyan orange blue'
+            '. orange .';
+    }
+
+    .card__title {
+        margin-bottom: .8rem;
+    }
+
+    .card__img {
+        width: 64px;
+    }
+
+    .card:nth-of-type(1) {
+        grid-area: cyan;
+    }
+
+    .card:nth-of-type(2) {
+        grid-area: red;
+    }
+
+    .card:nth-of-type(3) {
+        grid-area: orange;
+    }
+
+    .card:nth-of-type(4) {
+        grid-area: blue;
+    }
+}
