@@ -7,6 +7,7 @@
     --very-dark-blue: hsl(233, 47%, 7%);
     --Dark-desaturated-blue: hsl(244, 38%, 16%);
     --Soft-violet: hsl(277, 64%, 61%);
+    --cta-background: hsl(238, 22%, 44%);
     /* == neutral == */
     --White: hsl(0, 0%, 100%);
     --Slightly-transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
@@ -29,6 +30,10 @@ body {
     text-align: center;
 }
 
+input::placeholder {
+    opacity: .5;
+}
+
 /* === nav === */
 .nav {
     display: flex;
@@ -47,7 +52,7 @@ body {
 }
 
 .nav__list-item:not(:last-of-type) {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
 }
 
 .nav__link {
@@ -58,30 +63,31 @@ body {
 
 /* === main === */
 
-/* == section one == */
-.main__header {
+/* ==  header == */
+.header {
     padding: 3rem;
+    margin-bottom: 6rem;
 }
 
-.main__header-image {
+.header__image {
     width: 100%;
 }
 
-.main__header-title {
+.header__title {
     margin: 4rem 0 3rem;
     color: var(--Dark-desaturated-blue);
     font-size: 2.4rem;
     line-height: 1.5;
 }
 
-.main__header-description {
+.header__description {
     color: var(--Dark-desaturated-blue);
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 3rem;
 }
 
-.main__header-form {
+.header__form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -94,10 +100,6 @@ body {
     border-radius: 4px;
 }
 
-.header-form__input::placeholder {
-    opacity: .5;
-}
-
 .header-form__button {
     width: 100%;
     background-color: #2F65F9;
@@ -107,12 +109,16 @@ body {
     border-radius: 4px;
     border: none;
     box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, .3);
-
 }
 
-/* == section two == */
+/* == example == */
 .example {
-    padding: 2rem;
+    background: url(images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 9rem 2rem 5rem;
+
 }
 
 .example__image {
@@ -120,8 +126,8 @@ body {
 }
 
 .example__title {
-    font-size: 1.5rem;
-    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+    margin: 7rem 0 2.5rem;
 }
 
 .example__description {
@@ -129,9 +135,120 @@ body {
     color: var(--very-dark-blue);
     opacity: .8;
     font-size: 1.4rem;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .example__description:first-of-type {
     margin-bottom: 2rem;
+}
+
+.example__link {
+    display: inline-block;
+    color: rgb(94, 179, 175);
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 3rem 0 2rem;
+    text-decoration: none;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid rgb(94, 179, 175);
+}
+
+.testimonial {
+    background-color: var(--White);
+    margin: 2.2rem;
+    padding: 2rem 1rem 2rem 2.5rem;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.testimonial__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 500;
+    letter-spacing: .1px;
+}
+
+.testimonial__info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.info__img {
+    border-radius: 50%;
+    width: 2.8rem;
+}
+
+.info_text {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    color: var();
+}
+
+.info_text h5 {
+    font-size: 1rem;
+}
+
+.info_text p {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+/* == cta == */
+
+.cta {
+    background-color: var(--cta-background);
+    padding: 5rem 3.5rem;
+}
+
+.cta__title {
+    color: var(--White);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.cta__description {
+    color: var(--Slightly-transparent-white-paragraph);
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+
+.cta__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 2.5rem;
+}
+
+.cta-form__input {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+}
+
+.cta-form__button {
+    background-color: #2F65F9;
+    width: 100%;
+    padding: 1rem;
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, .3);
+}
+
+.footer {
+    text-align: initial;
+    background-color: var(--Dark-desaturated-blue);
+}
+
+.footer__text {
+    color: var(--Slightly-transparent-white-paragraph);
 }
