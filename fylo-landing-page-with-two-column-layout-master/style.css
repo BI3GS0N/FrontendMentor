@@ -4,10 +4,11 @@
 :root {
     /* === colors === */
     /* == primary == */
-    --very-dark-blue: hsl(233, 47%, 7%);
-    --Dark-desaturated-blue: hsl(244, 38%, 16%);
-    --Soft-violet: hsl(277, 64%, 61%);
+    --text-color: hsl(243, 90%, 12%);
+    --button-bg: hsl(224, 94%, 58%);
     --cta-background: hsl(238, 22%, 44%);
+    --footer-background: hsl(243, 87%, 12%);
+
     /* == neutral == */
     --White: hsl(0, 0%, 100%);
     --Slightly-transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
@@ -57,7 +58,7 @@ input::placeholder {
 
 .nav__link {
     text-decoration: none;
-    color: var(--very-dark-blue);
+    color: var(--text-color);
     font-size: 1.3rem;
 }
 
@@ -75,13 +76,13 @@ input::placeholder {
 
 .header__title {
     margin: 4rem 0 3rem;
-    color: var(--Dark-desaturated-blue);
+    color: var(--text-color);
     font-size: 2.4rem;
     line-height: 1.5;
 }
 
 .header__description {
-    color: var(--Dark-desaturated-blue);
+    color: var(--text-color);
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 3rem;
@@ -96,13 +97,13 @@ input::placeholder {
 .header-form__input {
     padding: 1.2rem 2.2rem;
     width: 100%;
-    border: 1px solid var(--Dark-desaturated-blue);
+    border: 1px solid hsl(243, 90%, 12%);
     border-radius: 4px;
 }
 
 .header-form__button {
     width: 100%;
-    background-color: #2F65F9;
+    background-color: var(--button-bg);
     color: var(--White);
     font-weight: 700;
     padding: 1.2rem;
@@ -118,7 +119,6 @@ input::placeholder {
     background-position: center;
     background-size: cover;
     padding: 9rem 2rem 5rem;
-
 }
 
 .example__image {
@@ -128,12 +128,12 @@ input::placeholder {
 .example__title {
     font-size: 1.6rem;
     margin: 7rem 0 2.5rem;
+    color: var(--text-color);
 }
 
 .example__description {
     text-align: left;
-    color: var(--very-dark-blue);
-    opacity: .8;
+    color: var(--text-color);
     font-size: 1.4rem;
     line-height: 1.5;
 }
@@ -167,6 +167,7 @@ input::placeholder {
     line-height: 1.8;
     font-weight: 500;
     letter-spacing: .1px;
+    color: var(--text-color);
 }
 
 .testimonial__info {
@@ -174,25 +175,26 @@ input::placeholder {
     align-items: center;
     gap: 1rem;
     margin-top: 1.5rem;
+    color: var(--text-color);
 }
 
-.info__img {
+.testimonial__info-img {
     border-radius: 50%;
     width: 2.8rem;
 }
 
-.info_text {
+.testimonial__info-text {
     display: flex;
     flex-direction: column;
     gap: .3rem;
     color: var();
 }
 
-.info_text h5 {
+.testimonial__info-text h5 {
     font-size: 1rem;
 }
 
-.info_text p {
+.testimonial__info-text p {
     font-size: .8rem;
     font-weight: 500;
 }
@@ -201,7 +203,7 @@ input::placeholder {
 
 .cta {
     background-color: var(--cta-background);
-    padding: 5rem 3.5rem;
+    padding: 6rem 3.5rem;
 }
 
 .cta__title {
@@ -233,7 +235,7 @@ input::placeholder {
 }
 
 .cta-form__button {
-    background-color: #2F65F9;
+    background-color: var(--button-bg);
     width: 100%;
     padding: 1rem;
     color: var(--White);
@@ -241,14 +243,53 @@ input::placeholder {
     font-size: 1.2rem;
     border: none;
     border-radius: 2px;
-    box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, .3);
+    box-shadow: 3px 3px 5px -3px rgba(0, 0, 0, .3);
 }
 
+/* === footer === */
 .footer {
     text-align: initial;
-    background-color: var(--Dark-desaturated-blue);
+    background-color: #07043B;
+    padding: 6rem 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .footer__text {
     color: var(--Slightly-transparent-white-paragraph);
+}
+
+.contact__row {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact__row:first-of-type {
+    margin-bottom: 2rem;
+}
+
+.footer__links {
+    list-style: none;
+}
+
+.footer__links-item:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
