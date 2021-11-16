@@ -30,6 +30,11 @@
         flex: 2;
     }
 
+    .invalid--header {
+        position: absolute;
+        top: 45px;
+    }
+
     .header-form__button {
         flex: 1;
     }
@@ -105,7 +110,6 @@
             display: flex;
             align-items: center;
             gap: 4rem;
-            /* justify-content: space-between; */
         }
 
         .section__image-wrapper {
@@ -176,7 +180,6 @@
         }
 
         /* cta */
-
         .cta {
             display: flex;
             padding: 9rem 8rem 7rem;
@@ -211,7 +214,6 @@
         }
 
         /* footer */
-
         .footer {
             padding: 10rem 6rem 3rem;
         }

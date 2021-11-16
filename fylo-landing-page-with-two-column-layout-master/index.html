@@ -4,14 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media-queries.css">
-
   <style>
     .attribution {
       color: white;
@@ -26,7 +23,6 @@
 </head>
 
 <body>
-
   <nav class="nav">
     <img class="nav__logo" src="images/logo.svg" alt="">
     <ul class="nav__list">
@@ -35,9 +31,7 @@
       <li class="nav__list-item"><a class="nav__link" href="#">Sign In</a></li>
     </ul>
   </nav>
-
   <main class="main">
-
     <section class="header section">
       <div class="header__image-wrapper section__image-wrapper">
         <img class="header__image section__image" src="images/illustration-1.svg" alt="">
@@ -51,12 +45,12 @@
           <label class="header-form__label" for="email">
             <input class="header-form__input" type="email" placeholder="Enter your email..." id="email" name="email">
           </label>
+          <p class="invalid invalid--header">Please check your email</p>
           <button class="header-form__button">Get Started</button>
         </form>
       </div>
     </section>
     <!-- header section end -->
-
     <section class="example section">
       <div class="example_image-wrapper section__image-wrapper">
         <img src="images/illustration-2.svg" alt="" class="example__image section__image">
@@ -105,10 +99,8 @@
           </div>
         </div>
       </div>
-
     </section>
     <!-- example section end -->
-
     <section class="cta">
       <div class="cta__column--one">
         <h2 class="cta__title">Get early access today</h2>
@@ -122,15 +114,14 @@
           <label class="cta-form__label" for="cta-email">
             <input class="cta-form__input" type="email" placeholder="email@example.com" id="cta-email">
           </label>
+          <p class="invalid invalid--cta">Please check your email</p>
           <button class="cta-form__button">Get Started For Free</button>
         </form>
       </div>
     </section>
     <!-- cta section end -->
   </main>
-
   <footer class="footer">
-
     <div class="footer__logo">
       <svg width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
@@ -151,7 +142,6 @@
         </g>
       </svg>
     </div>
-
     <div class="footer__content">
       <div class="footer__contact">
         <div class="contact__row">
@@ -163,36 +153,30 @@
           <p class="footer__text">example@fylo.com</p>
         </div>
       </div>
-
       <ul class="footer__links">
         <li class="footer__links-item"><a href="#" class="footer__link footer__text">About Us</a></li>
         <li class="footer__links-item"><a href="#" class="footer__link footer__text">Jobs</a></li>
         <li class="footer__links-item"><a href="#" class="footer__link footer__text">Press</a></li>
         <li class="footer__links-item"><a href="#" class="footer__link footer__text">Blog</a></li>
       </ul>
-
       <ul class="footer__links">
         <li class="footer__links-item"><a href="#" class="footer__link footer__text">Contact Us</a></li>
         <li class="footer__links-item"><a href="#" class="footer__link footer__text">Terms</a></li>
         <li class="footer__links-item"><a href="#" class="footer__link footer__text">Privacy</a></li>
       </ul>
-
       <div class="footer__socials">
-        <a href="#"> <i class='bx bxl-facebook-circle footer__text bx-lg'></i></a>
-        <a href="#"><i class='bx bxl-twitter footer__text bx-lg'></i></a>
-        <a href="#"><i class='bx bxl-instagram-alt footer__text bx-lg'></i></a>
+        <a href="#"> <i class='bx bxl-facebook-circle footer__text footer__link bx-lg'></i></a>
+        <a href="#"><i class='bx bxl-twitter footer__text footer__link bx-lg'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt footer__text footer__link bx-lg'></i></a>
       </div>
     </div>
-
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Sylwester Biega</a>.
     </p>
-
   </footer>
-  <!-- <footer>
-    
-  </footer> -->
+
+  <script src="js.js"></script>
 </body>
 
 </html>

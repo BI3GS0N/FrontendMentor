@@ -8,7 +8,6 @@
     --button-bg: hsl(224, 94%, 58%);
     --cta-background: hsl(238, 22%, 44%);
     --footer-background: hsl(243, 87%, 12%);
-
     /* == neutral == */
     --White: hsl(0, 0%, 100%);
     --Slightly-transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
@@ -33,6 +32,22 @@ body {
 
 input::placeholder {
     opacity: .5;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* invalid */
+.invalid {
+    text-align: left;
+    font-size: 1.2rem;
+    color: hsl(344, 75%, 63%);
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 /* === nav === */
@@ -62,8 +77,11 @@ input::placeholder {
     font-size: 1.3rem;
 }
 
-/* === main === */
+.nav__link:hover {
+    color: hsl(243, 28%, 55%);
+}
 
+/* === main === */
 /* ==  header == */
 .header {
     padding: 3rem;
@@ -92,6 +110,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    position: relative;
 }
 
 .header-form__input {
@@ -99,6 +118,10 @@ input::placeholder {
     width: 100%;
     border: 1px solid hsl(243, 90%, 12%);
     border-radius: 4px;
+}
+
+.header-form__input:invalid {
+    border-color: hsl(344, 75%, 63%);
 }
 
 .header-form__button {
@@ -110,6 +133,11 @@ input::placeholder {
     border-radius: 4px;
     border: none;
     box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, .3);
+    transition: background-color .5s;
+}
+
+.header-form__button:hover {
+    background-color: hsl(221, 100%, 71%);
 }
 
 /* == example == */
@@ -151,6 +179,11 @@ input::placeholder {
     text-decoration: none;
     padding-bottom: .6rem;
     border-bottom: 1px solid rgb(94, 179, 175);
+    transition: opacity .5s;
+}
+
+.example__link:hover {
+    opacity: .5;
 }
 
 .testimonial {
@@ -200,7 +233,6 @@ input::placeholder {
 }
 
 /* == cta == */
-
 .cta {
     background-color: var(--cta-background);
     padding: 6rem 3.5rem;
@@ -234,6 +266,14 @@ input::placeholder {
     border-radius: 2px;
 }
 
+.cta-form__input:invalid {
+    border: 1px solid hsl(344, 75%, 63%)
+}
+
+.invalid--cta {
+    color: var(--Slightly-transparent-white-paragraph);
+}
+
 .cta-form__button {
     background-color: var(--button-bg);
     width: 100%;
@@ -244,6 +284,11 @@ input::placeholder {
     border: none;
     border-radius: 2px;
     box-shadow: 3px 3px 5px -3px rgba(0, 0, 0, .3);
+    transition: background-color .5s;
+}
+
+.cta-form__button:hover {
+    background-color: hsl(221, 100%, 71%);
 }
 
 /* === footer === */
@@ -286,6 +331,10 @@ input::placeholder {
 
 .footer__link {
     text-decoration: none;
+}
+
+.footer__link:hover {
+    color: hsl(231, 39%, 60%)
 }
 
 .footer__socials {
