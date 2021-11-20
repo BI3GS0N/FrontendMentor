@@ -7,5 +7,5 @@
 4. Profile Card Component [Live](https://bi3gs0n.github.io/FrontendMentor/profile-card-component-main/) | [Solution](https://www.frontendmentor.io/solutions/profile-card-component-SZ5riSb0s)
 5. Single Price Grid Component [Live](https://bi3gs0n.github.io/FrontendMentor/single-price-grid-component-master/) | [Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-YLh3k3Oq6)
 6. Four Card Feature Section [Live](https://bi3gs0n.github.io/FrontendMentor/four-card-feature-section-master/) | [Solution](https://www.frontendmentor.io/solutions/four-card-feature-section-QItc9HHE9)
-7. Fylo landing page with two column layout [Live](https://bi3gs0n.github.io/FrontendMentor/fylo-landing-page-with-two-column-layout-master) | [Solution](https://www.frontendmentor.io/solutions/)
-8. Article Preview Component [Live](https://bi3gs0n.github.io/FrontendMentor/article-preview-component-master) | [Solution](https://www.frontendmentor.io/solutions/) | SASS |
+7. Fylo landing page with two column layout [Live](https://bi3gs0n.github.io/FrontendMentor/fylo-landing-page-with-two-column-layout-master) | [Solution](https://www.frontendmentor.io/solutions/fylo-landing-page-BggCVgcRP)
+8. Article Preview Component [Live](https://bi3gs0n.github.io/FrontendMentor/article-preview-component-master) | [Solution](https://www.frontendmentor.io/solutions/article-preview-component-using-sass-Wqtgk1r4A) | SASS |
