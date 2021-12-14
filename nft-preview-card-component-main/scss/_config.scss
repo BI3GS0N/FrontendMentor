@@ -28,3 +28,9 @@ body {
     font-size: 1.8rem;
     background-color: $Very-dark-blue-main-BG;
 }
+
+a {
+    text-decoration: none;
+    color: $White;
+    cursor: unset;
+}

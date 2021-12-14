@@ -4,28 +4,73 @@
     display: flex;
     flex-direction: column;
     max-width: 330px;
-    padding: 2.4rem;
+    padding: 2.5rem;
     border-radius: 1.5rem;
     background-color: $Very-dark-blue-card-BG;
-    gap: 1.8rem;
     box-shadow: 0 10px 40px $Shadow;
+    gap: 1.6rem;
+
+    @media (min-width:992px) {
+        max-width: 354px;
+        padding-bottom: 3rem;
+    }
+}
+
+.card__image-wrapper {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: .5rem;
+    cursor: pointer;
 }
 
 .card__image {
     width: 100%;
-    border-radius: .5rem;
+    position: relative;
+    display: flex;
 }
 
+.card__image-wrapper::after {
+    content: url('../images/icon-view.svg');
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+.card__image-wrapper:hover::after {
+    opacity: 1;
+}
+
+
 .card__title {
-    font-size: 2.2rem;
+    font-size: 2.15rem;
     color: $White;
+    letter-spacing: .05rem;
+    display: inline-block;
+    transition: color .3s linear;
+
+    &:hover {
+        cursor: pointer;
+        color: $Cyan;
+    }
 }
 
 .card__description {
     color: $Soft-blue;
     font-weight: 300;
-    font-size: 1.6rem;
+    font-size: 1.65rem;
     line-height: 2.5rem;
+
+    @media (min-width:992px) {
+        font-size: 1.8rem;
+        margin-bottom: .5rem;
+    }
 }
 
 .card__details {
@@ -34,15 +79,20 @@
     padding-bottom: 1.5rem;
     border-bottom: 1px solid $Very-dark-blue-line;
 
+    @media (min-width:992px) {
+        padding-bottom: 2.5rem;
+    }
+
     p {
         display: flex;
         align-items: center;
-        gap: .5rem;
-        font-size: 1.5rem;
+        gap: .7rem;
+        font-size: 1.6rem;
         color: $Cyan;
 
         &:last-of-type {
             color: $Soft-blue;
+            // font-size: 1.6rem;
         }
     }
 }
@@ -60,11 +110,21 @@
 
     p {
         color: $Soft-blue;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         font-weight: 300;
+
+        @media (min-width:992px) {
+            font-size: 1.65rem;
+        }
 
         span {
             color: $White;
+            transition: color .3s linear;
+
+            &:hover {
+                cursor: pointer;
+                color: $Cyan;
+            }
         }
     }
 }
