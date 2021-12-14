@@ -9,4 +9,4 @@
 6. Four Card Feature Section [Live](https://bi3gs0n.github.io/FrontendMentor/four-card-feature-section-master/) | [Solution](https://www.frontendmentor.io/solutions/four-card-feature-section-QItc9HHE9)
 7. Fylo landing page with two column layout [Live](https://bi3gs0n.github.io/FrontendMentor/fylo-landing-page-with-two-column-layout-master) | [Solution](https://www.frontendmentor.io/solutions/fylo-landing-page-BggCVgcRP)
 8. Article Preview Component [Live](https://bi3gs0n.github.io/FrontendMentor/article-preview-component-master) | [Solution](https://www.frontendmentor.io/solutions/article-preview-component-using-sass-Wqtgk1r4A) | SASS |
-9. NFT preview card component [Live](https://bi3gs0n.github.io/FrontendMentor/nft-preview-card-component-main) | [Solution](https://www.frontendmentor.io/solutions/) | SASS |
+9. NFT preview card component [Live](https://bi3gs0n.github.io/FrontendMentor/nft-preview-card-component-main) | [Solution](https://www.frontendmentor.io/solutions/nft-preview-card-component-Q9THnSWFe) | SASS |
