@@ -1,0 +1,99 @@
+@use 'config'as *;
+
+
+.testimonials {
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: $White;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-bottom: 10px;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 1.5;
+
+    h3 {
+        font-size: 15px;
+    }
+
+    p {
+        opacity: 50%;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid $Moderate-violet-lighter;
+        margin-right: 10px;
+    }
+}
+
+.card__lead {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.card__quote {
+    font-weight: 500;
+    line-height: 1.4;
+    opacity: 70%;
+}
+
+.card--bg-purple {
+    background-color: $Moderate-violet;
+    color: $White;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 10px right 100px;
+}
+
+.card--bg-light-gray {
+    background-color: $Very-dark-grayish-blue;
+    color: $White;
+}
+
+.card--bg-dark-gray {
+    background-color: $Very-dark-blackish-blue;
+    color: $White;
+}
+
+// card grid
+
+.card:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+.card:nth-of-type(4) {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.card:nth-of-type(5) {
+    grid-column: 4;
+    grid-row: 1/3;
+}
+
+//footer
+footer {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}

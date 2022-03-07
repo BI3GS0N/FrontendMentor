@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;500;600;700&display=swap');
+
+// Colors
+$Moderate-violet: #7541c8;
+$Moderate-violet-lighter: #996ed9;
+$Very-dark-grayish-blue: rgb(72, 85, 106);
+$Very-dark-blackish-blue: rgb(25, 33, 46);
+$White: #ffffff;
+//neautral
+$Light-gray: hsl(0, 0%, 81%);
+$Light-grayish-blue: #ecf2f8;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $Light-grayish-blue;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.7;
+    font-size: 13px;
+}
